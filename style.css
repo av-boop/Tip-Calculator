@@ -1,0 +1,126 @@
+body {
+  background-color: #4b4b4b;
+  font-family: sans-serif;
+}
+
+.outer-div {
+  width: 500px;
+  height: 670px;
+
+  transform: translate(-50%, 0);
+  position: absolute;
+  left: 50%;
+  padding: 7px;
+}
+
+.inner-div {
+  width: 400px;
+  height: 670px;
+
+  transform: translate(-50%, 0);
+  position: relative;
+  left: 50%;
+  background-color: #092532;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-div {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.text-div {
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+}
+
+.p1 {
+  color: white;
+  font-size: 20px;
+}
+
+.box1 {
+  height: 40px;
+  width: 70%;
+  background-color: white;
+  border: 1px solid green;
+  outline: none;
+  color: black;
+  font-size: 20px;
+  padding: 7px;
+}
+
+.opt {
+  width: 70%;
+  height: 30px;
+  border: 1px solid green;
+}
+
+.butn {
+  width: 80%;
+  height: 30px;
+  background-color: #c23616;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+
+  position: relative;
+
+  padding: 15px;
+  text-align: center;
+}
+:hover.butn {
+  background-color: #e84118;
+  border: 3px solid black;
+}
+#totalTip {
+  color: white;
+  position: relative;
+  top: 40px;
+  font-size: 30px;
+}
+
+.butn1 {
+  position: relative;
+  top: 60px;
+  width: 70%;
+  height: 40px;
+  background-color: #c23616;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+:hover.butn1 {
+  background-color: #e84118;
+  border: 3px solid black;
+}
+
+@media (max-width: 500px) {
+  .outer-div {
+    width: 100%;
+    height: 100vh
+
+    transform: translate(-50%, 0);
+    position: absolute;
+    left: 50%;
+    padding: 7px;
+  }
+  .inner-div {
+    width: 100%;
+    height: 100vh;
+
+    transform: translate(-50%, 0);
+    position: relative;
+    left: 50%;
+    background-color: #092532;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer-div">
+      <div class="inner-div">
+        <div class="head-div">
+          <h2>TIP CALCULATOR</h2>
+        </div>
+
+        <div class="text-div">
+          <form id="myform">
+            <p class="p1">How Much Is Your Bill?</p>
+
+            <input type="text" class="box1" placeholder="In Rupees" id="amount" autocomplete="off"/> <br />
+            <br />
+
+            <p class="p1">How Was The Service?</p>
+
+            <select class="opt" id="service">
+              <option disabled selected value="0">Choose Option</option>
+           <option value="0.3">30&#37; &#45; Outstanding</option>
+           <option value="0.2">20&#37; &#45; very good</option>
+           <option value="0.15">15&#37; &#45; It was ok</option>
+           <option value="0.10">10&#37; &#45; Bad</option>
+           <option value="0.05">05&#37; &#45; Terrible</option>
+            </option>
+            </select> 
+
+
+            <p class="p1">No. of Persons Sharing Bill?</p>
+            <input type="number" class="box1" placeholder="No. of persons" id="persons"  autocomplete="off"/> <br /> <br> <br>
+
+              <span  class="butn" onclick="calculate()">Calculate</span> 
+
+
+            <div id="totalTip">
+                Rs <span id="tip">0.00</span>
+                <small id="each">each</small>
+              </div>
+
+              <button  class="butn1" onclick="window.location.reload()">Reset</button>
+              
+           
+          </form>
+
+         
+
+         
+        </div>
+      </div>
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
